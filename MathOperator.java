@@ -1,3 +1,4 @@
+import java.util.Scanner;
 
 /**
  * Write a description of class MathOperator here.
@@ -7,27 +8,25 @@
  */
 public class MathOperator
 {
-    // instance variables - replace the example below with your own
-    private int x;
-
-    /**
-     * Constructor for objects of class MathOperator
-     */
-    public MathOperator()
+    public static void main(String[]arg)
     {
-        // initialise instance variables
-        x = 0;
+        Scanner sc=new Scanner(System.in);
+        
+        System.out.println("Enter your firstNumeric grade");
+        int firstNumeric=sc.nextInt();
+         
+        System.out.println("Enter your secondNumeric grade");
+        int secondNumeric=sc.nextInt();
+        
+        int sum=firstNumeric+secondNumeric;
+       
+        int difference=firstNumeric-secondNumeric;
+       
+        int multiplication=firstNumeric*secondNumeric;
+        System.out.print("the sum is"+sum +"\n"+"the difference"+difference+"\n");
     }
 
-    /**
-     * An example of a method - replace this comment with your own
-     *
-     * @param  y  a sample parameter for a method
-     * @return    the sum of x and y
-     */
-    public int sampleMethod(int y)
-    {
-        // put your code here
-        return x + y;
-    }
+         
+    
+
 }
